@@ -20,25 +20,28 @@ function App() {
   return (
     <div className="App">
     <Router>
-      <Container>
-        <Nav defaultActiveKey="/" variant="tabs" fill>
-            <Nav.Item>
-                <Nav.Link href="/"> 
-                    <Link to="/">Home</Link>
-                </Nav.Link>
-            </Nav.Item>
-            <Nav.Item >
-                <Nav.Link eventKey={"aboutPage"}> 
-                    <Link to="/about">About Us</Link>
-                </Nav.Link>
-            </Nav.Item>
-            <Nav.Item >
-                <Nav.Link eventKey={"packagesPage"}> 
-                    <Link to="/packages">Our Packages</Link> 
-                </Nav.Link>
-            </Nav.Item>
-        </Nav>
-      </Container>
+      <header>
+        <h1 className="title">Welcome to Monty's Mineral SPA</h1>
+          <Container>
+            <Nav defaultActiveKey="/" variant="tabs" fill>
+                <Nav.Item>
+                    <Nav.Link href="/"> 
+                        <Link to="/">Home</Link>
+                    </Nav.Link>
+                </Nav.Item>
+                <Nav.Item >
+                    <Nav.Link eventKey={"aboutPage"}> 
+                        <Link to="/about">About Us</Link>
+                    </Nav.Link>
+                </Nav.Item>
+                <Nav.Item >
+                    <Nav.Link eventKey={"packagesPage"}> 
+                        <Link to="/packages">Our Packages</Link> 
+                    </Nav.Link>
+                </Nav.Item>
+            </Nav>
+          </Container>
+      </header>
       <div className="display">
         <Routes>
           <Route path="/" element={<Home />} />
