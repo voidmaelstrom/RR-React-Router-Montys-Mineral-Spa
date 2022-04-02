@@ -10,11 +10,11 @@ import Packages from './components/Packages'
 function App() {
 
   const packages = [
-  'Activate your Crystals', 
-  'Monkey Meditation', 
-  'Soak in the Hotsprings', 
-  'Hypnotherapy', 
-  'Mineral Bath'
+    'Activate your Crystals', 
+    'Monkey Meditation', 
+    'Soak in the Hotsprings', 
+    'Hypnotherapy', 
+    'Mineral Bath'
   ]
 
   return (
